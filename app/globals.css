@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-crema: #FAF6EE;
+  --color-cafe: #1F1813;
+  --color-terracota: #B05C3B;
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-lg border border-cafe/20 bg-white px-3 py-2;
+  }
+  .btn {
+    @apply rounded-lg bg-terracota px-4 py-2 font-medium text-crema;
+  }
+  .card {
+    @apply rounded-xl border border-cafe/10 bg-white p-4;
+  }
+  .label {
+    @apply block text-sm text-cafe/70;
+  }
+}
